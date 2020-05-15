@@ -1,0 +1,48 @@
+/**/
+/*.advanced_blocks_offcanvas{
+	display: none;
+}*/
+.advanced_blocks_offcanvas.right{
+	right: 0;
+	left: initial;
+}
+.advanced_blocks_offcanvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 99;
+    background: rgba(255,255,255,.95);
+}
+.offcanvas_cancel {
+    position: absolute;
+    z-index: 50;
+}
+
+.advanced_blocks_offcanvas.slide {
+	transform: translateX(-100%);
+	transition: all .30s linear;
+}
+.advanced_blocks_offcanvas.slide.active {
+	transform: translateX(0%);
+}
+.advanced_blocks_offcanvas.slide.right {
+	transform: translateX(100%);
+}
+.advanced_blocks_offcanvas.slide.active.right {
+	transform: translateX(0%);
+}
+
+/**/
+.offcanvas_overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(62,62,62,.95);
+	z-index: 99;
+}
+
+body.offcanvas_open{
+    transition: all 1s linear;
+}
+/**/
