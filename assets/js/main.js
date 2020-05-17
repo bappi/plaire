@@ -28,10 +28,10 @@
     $(".plaire-banner-search-container").addClass("active");
   });
 
-  $(".plaire-banner-arrows .slick-prev").click(function () {
+  $(".plaire-banner-arrows .slick-prev").on("click", function () {
     $(".plaire-banner-area.type-1").slick("slickPrev");
   });
-  $(".plaire-banner-arrows .slick-next").click(function () {
+  $(".plaire-banner-arrows .slick-next").on("click", function () {
     $(".plaire-banner-area.type-1").slick("slickNext");
   });
   let BannerCarousel2 = $(".plaire-banner.type-2");
@@ -219,8 +219,4 @@
     e.preventDefault();
     $(".plaire-offcanvas-nav .has-dropdown").find(".sub-menu").slideUp();
   });
-  // if(offcanvasNav.find('li').children('ul').length > 0){
-
-  // }
-  //hasDropdown = subMenu.parent('li').addClass('has-dropdown');
 })();
